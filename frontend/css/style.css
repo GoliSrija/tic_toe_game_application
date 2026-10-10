@@ -1,0 +1,118 @@
+/* Tic-Tac-Toe Game Application */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin-top: 1rem;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    flex: 1;
+    max-width: calc(33.33% - 2rem);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.card .content {
+    padding: 1rem;
+}
+
+.card .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card .description {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Forms Section */
+.form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding:
+:root{--primary:#3157d5;--primary-dark:#2443ad;--bg:#f4f7fc;--text:#1c2740;--muted:#748099;--border:#e1e7f0}
+*{box-sizing:border-box}body{margin:0;color:var(--text);background:var(--bg);font-family:Inter,"Segoe UI",Arial,sans-serif;line-height:1.55}
+header{padding:18px 24px;background:#fff;border-bottom:1px solid var(--border)}main,.container,.dashboard,.content{max-width:1240px;margin:28px auto;padding:24px}
+a{color:var(--primary)}button,.button,input[type=submit]{border:0;border-radius:9px;padding:10px 16px;background:var(--primary);color:#fff;font:inherit;cursor:pointer}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid var(--border);border-radius:8px;font:inherit;background:#fff}
+form{display:grid;gap:12px}article,.card,section{background:#fff;border:1px solid var(--border);border-radius:14px;padding:20px;box-shadow:0 5px 20px #192d550b}
+.auth-card{max-width:460px;margin:7vh auto}.auth-links{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.dashboard-header{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.dashboard-intro,.notice{color:var(--muted)}
+.module-grid,.summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin:20px 0}
+.module-card{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--text);background:#fff;border:1px solid var(--border);border-radius:14px;padding:18px}
+.module-card strong,.module-card small{display:block}.module-card small{color:var(--muted);margin-top:4px}.module-icon{font-weight:800;color:var(--primary)}
+.summary-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:18px}.summary-card strong{display:block;font-size:26px}
+#dynamic-page-view{max-width:1240px;margin:28px auto;padding:24px;background:#fff;border:1px solid var(--border);border-radius:14px}
+#dynamic-page-view .module-toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:18px 0}
+table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:12px;border-bottom:1px solid var(--border);text-align:left}
+[hidden]{display:none!important}.status-message{padding:10px;border-radius:8px;background:#edf2fc}.status-error{background:#fff0f0;color:#9d1c1c}
+@media(max-width:700px){main,.container,.dashboard,.content,#dynamic-page-view{padding:16px;margin:12px auto}table{display:block;overflow-x:auto}}

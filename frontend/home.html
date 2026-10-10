@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game Application</title>
+    
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="logo">Tic-Tac-Toe</div>
+            <nav>
+                <ul>
+                    <li><a href="#/dashboard" class="active">Dashboard</a></li>
+                    <li><a href="#/login">Login</a></li>
+                    <li><a href="#/register">Register</a></li>
+                    <li><a href="#/settings">Settings</a></li>
+                    <li><a href="#/logout">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="content">
+                <section id="dashboard">
+                    <div class="card">
+                        <h2>Game Mode Selection</h2>
+                        <form id="game-mode-form">
+                            <label for="single-player">Single Player</label>
+                            <input type="radio" id="single-player" name="mode" value="single">
+                            <label for="multiplayer">Multiplayer</label>
+                            <input type="radio" id="multiplayer" name="mode" value="multi">
+                            <button type="submit">Start Game</button>
+                        </form>
+                    </div>
+                    <div class="card">
+                        <h2>Select Symbols</h2>
+                        <form id="symbol-selection-form">
+                            <label for="player1-symbol">Player 1 (X/O)</label>
+                            <select id="player1-symbol">
+                                <option value="X">X</option>
+                                <option value="O">O</option>
+                            </select>
+                            <label for="player2-symbol">Player 2 (X/O)</label>
+                            <select id="player2-symbol">
+                                <option value="X">X</option>
+                                <option value="O">O</option>
+                            </select>
+                            <button type="submit">Choose Symbols</button>
+                        </form>
+                    </div>
+                    <div id="game-board" class="card">
+
+<script src="js/config.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
